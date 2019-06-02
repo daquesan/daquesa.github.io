@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"><link rel="stylesheet" type="text/css" href="/style.a141eb61.css"><title>PEC2 - Enciclopedia | Module Bundlers | Parcel - Jos&eacute; David Quero S&aacute;nchez</title></head><body> <header> <div class="row justify-content-center"> <div class="col-xs-12 col-lg-2"> <img srcset="/logo.6d3fc67b.png 200w,/logo_small.1cc2f460.png 125w" sizes="(min-width: 576px) 200px,
+                                125px" src="/logo_small.1cc2f460.png" alt="Logo de Enciclopedia"> </div> <div class="col-xs-12 col-lg-4"> <p id="header-title">Enciclopedia</p> </div> </div> </header> <nav> <div class="row justify-content-center"> <div class="col-xs-12"> <ul> <li><a href="/bundlers.html" title="Ir a Module Bundlers"><i class="fas fa-arrow-alt-circle-left fa-4x"></i></a></li> <li class="active"><img src="/parcel.45a91762.jpg" alt="Logo de Parcel" class="list-image"></li> <li><a href="/webpack.html" title="Ir a Webpack"><img src="/webpack.65143ab3.png" alt="Logo de Webpack" class="list-image"></a></li> <li><a href="/rollup.html" title="Ir a Rollup"><img src="/rollup.df3b9d87.png" alt="Logo de Rollup" class="list-image"></a></li> </ul> </div> </div> </nav> <article> <div class="row justify-content-center main"> <img src="/parcel_landscape.45a91762.jpg" alt="Imagen de Parcel"> </div>  <div class="row"> <div class="information col-xs-12 col-md-6 col-lg-4"> <p class="information-title"> Tiempos de empaquetado ultra-r&aacute;pidos </p> <p class="information-description"> Parcel usa procesos paralelos de trabajo para habilitar la compilación multin&uacute;cleo, y tiene un cach&eacute; de sistema de archivos para reconstrucciones r&aacute;pidas incluso despu&eacute;s de un reinicio. </p> </div> <div class="information col-xs-12 col-md-6 col-lg-4"> <p class="information-title"> Incluye todos tus recursos </p> <p class="information-description"> Parcel tiene soporte listo para usar para JS, CSS, HTML, archivos y m&aacute;s sin necesidad de plugins. </p> </div> <div class="information col-xs-12 col-md-6 col-lg-4"> <p class="information-title"> Conversiones autom&aacute;ticas </p> <p class="information-description"> El c&oacute;digo es transformado autom&aacute;ticamente utilizando Babel, PostCSS y PostHTML seg&uacute;n sea necesario incluyendo el contenido de <code>node_modules</code>. </p> </div> <div class="information col-xs-12 col-md-6 col-lg-4"> <p class="information-title"> Separaci&oacute;n de c&oacute;digo sin necesidad de configuraci&oacute;n </p> <p class="information-description"> Utilizando la sintaxis din&aacute;mica <code>import()</code>, Parcel separa tus archivos de salida para que solo se cargue lo que es necesario en la primera carga. </p> </div> <div class="information col-xs-12 col-md-6 col-lg-4"> <p class="information-title"> Reemplazo de m&oacute;dulos en caliente </p> <p class="information-description"> Parcel actualiza autom&aacute;ticamente los m&oacute;dulos en el navegador a medida que realiza cambios durante el desarrollo, sin necesidad de configuraci&oacute;n. </p> </div> <div class="information col-xs-12 col-md-6 col-lg-4"> <p class="information-title"> Registro de errores amigable </p> <p class="information-description"> Parcel imprime fragmentos de c&oacute;digo con resaltado de sintaxis cuando encuentra errores, para ayudarte a identificar el problema. </p> </div> </div> </article> <article> <div id="examples" class="row"> <div class="coding col-xs-12 col-md-6 col-lg-3"> <p class="coding-title"> <strong><code>index.html</code></strong> <input id="indexhtmlButton" type="button" value="Ocultar c&oacute;digo" class="toggleButton"> </p> <pre class="coding-description">
+                        <code>
+                            <span><<span>html</span>></span>
+                                &nbsp;&nbsp;<span><<span>body</span>></span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span><<span>script src="./index.js"</span>></span><span><<span>/script</span>></span>
+                                &nbsp;&nbsp;<span><<span>/body</span>></span>
+                            <span><<span>/html</span>></span>
+                        </code>
+                    </pre> </div> <div class="coding col-xs-12 col-md-6 col-lg-3"> <p class="coding-title"> <strong><code>index.js</code></strong> <input id="indexjsButton" type="button" value="Ocultar c&oacute;digo" class="toggleButton"> </p> <pre class="coding-description">
+                        <code>
+                            <em>// importar otro m&oacute;dulo</em>
+                            import main from './main';
+                            main();
+
+
+                        </code>
+                    </pre> </div> <div class="coding col-xs-12 col-md-6 col-lg-3"> <p class="coding-title"> <strong><code>main.js</code></strong> <input id="mainjsButton" type="button" value="Ocultar c&oacute;digo" class="toggleButton"> </p> <pre class="coding-description">
+                        <code>
+                            <em>// importar un m&oacute;dulo CSS</em>
+                            import classes from './main.css';
+                            export default () => {
+                                &nbsp;&nbsp;console.log(classes.main);
+                            };
+                        </code>
+                    </pre> </div> <div class="coding col-xs-12 col-md-6 col-lg-3"> <p class="coding-title"> <strong><code>main.css</code></strong> <input id="maincssButton" type="button" value="Ocultar c&oacute;digo" class="toggleButton"> </p> <pre class="coding-description">
+                        <code>
+                            .main {
+                                &nbsp;&nbsp;<em>/* Hacer referencia a un archivo de imagen */</em>
+                                &nbsp;&nbsp;background: url('./images/background.png');
+                                &nbsp;&nbsp;color: red;
+                            }
+                        </code>
+                    </pre> </div> </div> </article> <footer> <div class="row justify-content-center"> <div class="col-xs-12 col-lg-2"> <img srcset="/author.ac19ea93.jpg 200w,/author_small.ec45f83f.jpg 125w" sizes="(min-width: 576px) 200px,
+                                125px" src="/author_small.ec45f83f.jpg" alt="Foto del autor" class="clip-star"> </div> <div class="col-xs-12 col-lg-4"> <p id="footer-title">Enciclopedia</p> <p id="footer-author">Actividad realizada por Jos&eacute; David Quero S&aacute;nchez</p> </div> </div> </footer> <script type="text/javascript" src="/scripts.4c9b4c48.js"></script> </body></html>
